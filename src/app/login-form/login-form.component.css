@@ -1,0 +1,56 @@
+* {
+  margin: 0%x;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: monospace;
+  font-weight: bold;
+}
+body {
+  background-image: url(https://image.freepik.com/free-vector/abstract-geometric-shapes-colorful-modern-pattern_38782-838.jpg);
+}
+.nav {
+  display: flex;
+  background-color: #8a2be2;
+  justify-content: left;
+  min-width: 8vw;
+  box-shadow: 1px 2px 7px 1px;
+}
+.logo {
+  text-transform: uppercase;
+  color: rgb(241, 241, 241);
+  letter-spacing: 5px;
+  font-size: 22px;
+}
+.logo h4 {
+  margin-left: 5vw;
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.795);
+  display: grid;
+  grid-template-columns: repeat(autofill, 1fr);
+  box-shadow: 1px 2px 7px 1px;
+  margin: 4vh;
+}
+
+.log-box {
+  background-color: rgb(255, 255, 255);
+  width: auto;
+  grid-column: 1;
+  margin-left: 5vw;
+}
+.adds {
+  width: auto;
+  grid-column: 2;
+}
+.adds1 {
+  height: 70vh;
+  margin: auto;
+}
+.nav1 {
+  display: flex;
+  background-color: blueviolet;
+  height: 6em;
+  box-shadow: 1px 2px 7px 1px;
+  justify-content: space-around;
+  word-spacing: 10vw;
+}

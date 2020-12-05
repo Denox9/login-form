@@ -1,6 +1,5 @@
 import { Component, OnInit } from "@angular/core";
 
-import { Loginform } from "stackblitz:/src/app/login-form";
 
 @Component({
   selector: "app-login-form",
@@ -12,6 +11,4 @@ export class LoginFormComponent implements OnInit {
 
   ngOnInit() {}
   gender = ["Male", "Female"];
-
-  model = new Loginform();
 }

@@ -46,6 +46,20 @@ body {
   height: 70vh;
   margin: auto;
 }
+.input {
+  margin-top: 1vh;
+  margin-left: 2vw;
+  padding: 3px 10px;
+}
+.input-add {
+  margin-top: 1vh;
+  padding: 10px 10px;
+}
+.Gender {
+  margin-top: 1vh;
+  margin-left: 2vw;
+  padding: 3px 10px;
+}
 .nav1 {
   display: flex;
   background-color: blueviolet;

@@ -19,36 +19,35 @@
 					<h1>LOGIN</h1>
 					<h3>NAME</h3>
 					<label for="First">	First</label>
-					<input  id="First" ngModel name="First" #first="ngModel" (change)="log(First)" type="text" class="input" /><br>
-					<div class="alert alert-danger" *ngIf="first.touched && !first.valid">First name is required</div>
+					<input  id="First" ngModel name="First" #first="ngModel" type="text" class="input" /> <br>
 					<label for="Middle"> Middle</label>
-					<input id="Middle" ngModel name="Middle" #middle="ngModel" (change)="log(Middle)"type="text" class="input" /><br>
+					<input id="Middle" ngModel name="Middle" #middle="ngModel" type="text" class="input" /><br>
 					<label for="Last"> Last</label>
 					<input id="Last" ngModel name="Last" #last="ngModel" type="text" class="input" /> <br>
           </div> <br>
 					<div>
 						<label for="Address">	Address</label>
-						<input id="Address" ngModel name="Address" #address="ngModel" (change)="log(Address)" type="text" class="input-add" />
+						<input id="Address" ngModel name="Address" #address="ngModel" type="text" class="input-add" />
           </div>
 						<div>
 							<label for="Age">Age</label>
-							<input id="Age" ngModel name="Age" #age="ngModel" type="text" (change)="log(Age)" class="input" />
+							<input id="Age" ngModel name="Age" #age="ngModel" type="text" class="input" />
           </div>
 							<div>
 								<label for="Gender">	Gender</label>
-								<select  id="Gender" ngModel name="Gender" #gender="ngModel" (change)="log(Gender)"class="Gender" required></select>
+								<select  id="Gender" ngModel name="Gender" #gender="ngModel" class="Gender" ><option *ngForm="Gender" [value]="gender">{{gender}}</option></select>
 							</div>
 							<div>
 								<label for="Birthday">Birthday </label>
-								<input id="Birthday" ngModel name="Birthday" #birthday="ngModel" (change)="log(Birthday)"type="text" class="input" />
+								<input id="Birthday" ngModel name="Birthday" #birthday="ngModel" type="text" class="input" />
           </div>
 								<div>
 									<label for="Email">Email</label>
-									<input id="Email" ngModel name="Email" #email="ngModel" (change)="log(Email)" type="text" class="input" />
+									<input id="Email" ngModel name="Email" #email="ngModel" type="text" class="input" />
           </div>
 									<div>
 										<label for="Mobile"> Mobile No</label>
-										<input id="Mobile" ngModel name="Mobile" #mobile="ngModel" (change)="log(Mobile)"type="text" class="input" />
+										<input id="Mobile" ngModel name="Mobile" #mobile="ngModel" type="text" class="input" />
           </div>
 										<br />
 										<input ngModel name="btn" type="submit" #btn="ngModel" class="btn" value="Submit"/>

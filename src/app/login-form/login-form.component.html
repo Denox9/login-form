@@ -19,7 +19,8 @@
 					<h1>LOGIN</h1>
 					<h3>NAME</h3>
 					<label for="First">	First</label>
-					<input  id="First"  required ngModel name="First" #first="ngModel" (change)="log(First)" type="text" class="input" /><br>
+					<input  id="First" ngModel name="First" #first="ngModel" (change)="log(First)" type="text" class="input" /><br>
+					<div class="alert alert-danger" *ngIf="first.touched && !first.valid">First name is required</div>
 					<label for="Middle"> Middle</label>
 					<input id="Middle" ngModel name="Middle" #middle="ngModel" (change)="log(Middle)"type="text" class="input" /><br>
 					<label for="Last"> Last</label>
